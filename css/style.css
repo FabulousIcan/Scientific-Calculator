@@ -1,0 +1,10 @@
+#clk{width:50px; background-color:#EEE; font-family:DigifaceWide; font-size:15px; text-align:center;}
+table{border:4px solid #ccc; background-color:#FFF; font-family: Old English Text MT;}
+#outputfield{width:260px; height:60px; font-size:18px; font-family:DigifaceWide; background-color:#FFF; text-align: right}
+.btn_holder{
+  background-color:#BBBBBB;
+}
+.but0{width:45px; height:25px; background-color:#444; color:#FFF; text-align:center; -moz-border-radius:8px; -khtml-border-radius:8px; -webkit-border-radius:8px;}
+.but{width:45px; height:33px; background-color:#BBB; color:#FFF; text-align:center; -moz-border-radius:8px; -khtml-border-radius:8px; -webkit-border-radius:8px;}
+#del{width:45px; height:35px; background-color:#C95946; color:#FFF; text-align:center; -moz-border-radius:8px; -khtml-border-radius:8px; -webkit-border-radius:8px;}
+#ac{width:45px; height:35px; background-color:#C95946; color:#FFF; text-align:center; -moz-border-radius:8px; -khtml-border-radius:8px; -webkit-border-radius:8px;}

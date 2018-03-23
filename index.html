@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Scientific Calculator</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <html>
+
+<head>
+    <title>Calculator</title>
+</head>
+
+<body>
+    <table width="276" height="506" border="0" align="center" cellpadding="4" cellspacing="0">
+        <tr>
+            <td colspan="5" class="btn_holder" align="right">
+                <input name="clk" type="text" id="clk" readonly="readonly" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="5" class="btn_holder">
+                <font size="+2">Ican 9227-x</font>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="5" class="btn_holder" align="center" id="outputfield"></td>
+        </tr>
+        <tr>
+            <td class="btn_holder">
+                <button class="but0" onclick="clickedBtn(this)">1/x</button>
+            </td>
+            <td width="60" class="btn_holder">
+                <input type="submit" name="root" id="root" class="but0" value="√" onclick="root()" />
+            </td>
+            <td width="60" class="btn_holder">
+                <p>
+                    <input name="power" type="submit" id="square" class="but0" value="x^2" onclick="square()" />
+                </p>
+            </td>
+            <td width="60" class="btn_holder">
+                <input name="submit" type="submit" id="cube" class="but0" value="x^3" onclick="cube()" />
+            </td>
+            <td class="btn_holder">
+                <input type="submit" name="on" id="rnd" class="but0" value="Rnd" onclick="rnd()" />
+            </td>
+        </tr>
+        <tr>
+            <td height="32" class="btn_holder">
+                <input type="submit" name="pi" id="pi" class="but0" value="π" onclick="pi()" />
+            </td>
+            <td class="btn_holder">
+                <input type="submit" name="asin" id="asin" class="but0" value="asin" onclick="asin()" />
+            </td>
+            <td class="btn_holder">
+                <input type="submit" name="acos" id="acos" class="but0" value="acos" onclick="acos()" />
+            </td>
+            <td class="btn_holder">
+                <input type="submit" name="atan" id="atan" class="but0" value="atan" onclick="atan()" />
+            </td>
+            <td class="btn_holder">
+                <input type="submit" name="ln" id="ln" class="but0" value="ln 2" onclick="ln()" />
+            </td>
+        </tr>
+        <tr>
+            <td height="53" class="btn_holder">
+                <input type="submit" name="exp2" id="exp2" class="but0" value="E" onclick="e()" />
+            </td>
+            <td class="btn_holder">
+                <input type="submit" name="sin" id="sin" class="but0" value="sin" onclick="sin()" />
+            </td>
+            <td class="btn_holder">
+                <input type="submit" name="cos" id="cos" class="but0" value="cos" onclick="cos()" />
+            </td>
+            <td class="btn_holder">
+                <input type="submit" name="tan" id="tan" class="but0" value="tan" onclick="tan()" />
+            </td>
+            <td class="btn_holder">
+                <input type="submit" name="log" id="log" class="but0" value="log" onclick="log()" />
+            </td>
+        </tr>
+        <tr>
+            <td class="btn_holder">
+                <input type="submit" name="neg" id="neg" class="but0" value="( - )" onclick="neg()" />
+            </td>
+            <td class="btn_holder">
+                <input type="submit" name="bracop" id="bracop" class="but0" value="(" onclick="bracop()" />
+            </td>
+            <td class="btn_holder">
+                <input type="submit" name="braclo" id="braclo" class="but0" value=")" onclick="braclo()" />
+            </td>
+            <td class="btn_holder">
+                <input type="submit" name="comma" id="comma" class="but0" value="," onclick="comma()" />
+            </td>
+            <td class="btn_holder">
+                <input type="submit" name="mod" id="mod" class="but0" value="%" onclick="mod()" />
+            </td>
+        </tr>
+        <tr>
+            <td height="28" class="btn_holder">&nbsp;</td>
+            <td class="btn_holder" colspan="4">&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="btn_holder">
+                <button class="but" onclick="clickedBtn(this);">7</button>
+            </td>
+            <td class="btn_holder">
+                <button class="but" onclick="clickedBtn(this)">8</button>
+            </td>
+            <td class="btn_holder">
+                <button class="but" onclick="clickedBtn(this)">9</button>
+            </td>
+            <td class="btn_holder">
+                <button class="but" id="del" onclick="clickedBtn(this)">DEL</button>
+            </td>
+            <td class="btn_holder">
+                <button class="but" id="ac" onclick="clickedBtn(this)">AC</button>
+            </td>
+        </tr>
+        <tr>
+            <td class="btn_holder">
+                <button class="but" onclick="clickedBtn(this)" />4</button>
+            </td>
+            <td class="btn_holder">
+                <button class="but" onclick="clickedBtn(this)" />5</button>
+            </td>
+            <td class="btn_holder">
+                <button class="but" onclick="clickedBtn(this)">6</button>
+            </td>
+            <td class="btn_holder">
+                <button class="but" onclick="clickedBtn(this)">*</button>
+            </td>
+            <td class="btn_holder">
+                <button class="but" onclick="clickedBtn(this)">/</button>
+            </td>
+        </tr>
+        <tr>
+            <td class="btn_holder">
+                <button class="but" onclick="clickedBtn(this)">1</button>
+            </td>
+            <td class="btn_holder">
+                <button class="but" onclick="clickedBtn(this)">2</button>
+            </td>
+            <td class="btn_holder">
+                <button class="but" onclick="clickedBtn(this)">3</button>
+            </td>
+            <td class="btn_holder">
+                <button class="but" onclick="clickedBtn(this)">+</button>
+            </td>
+            <td class="btn_holder">
+                <input type="submit" name="subtract" id="subtract" class="but" value="-" onclick="subtract()" />
+            </td>
+        </tr>
+        <tr>
+            <td class="btn_holder">
+                <button class="but" onclick="clickedBtn(this)">0</button>
+            </td>
+            <td class="btn_holder">
+                <button class="but" onclick="clickedBtn(this)">.</button>
+            </td>
+            <td class="btn_holder">
+                <button class="but" onclick="clickedBtn(this)">EXP</button>
+            </td>
+            <td class="btn_holder">
+                <button class="but" onclick="clickedBtn(this)">ANS</button>
+            </td>
+            <td class="btn_holder">
+                <button class="but" onclick="clickedBtn(this)">=</button>
+            </td>
+        </tr>
+        <tr>
+            <td class="btn_holder">&nbsp;</td>
+            <td class="btn_holder">&nbsp;</td>
+            <td class="btn_holder">&nbsp;</td>
+            <td class="btn_holder">&nbsp;</td>
+            <td class="btn_holder">&nbsp;</td>
+        </tr>
+    </table>
+</body>
+
+</html>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
