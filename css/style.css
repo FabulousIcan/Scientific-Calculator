@@ -1,4 +1,4 @@
-#clk{width:50px; background-color:#EEE; font-family:DigifaceWide; font-size:15px; text-align:center;}
+#time_display{width:50px; background-color:#FFF; font-family:DigifaceWide; font-size:15px; text-align:center;}
 table{border:4px solid #ccc; background-color:#FFF; font-family: Old English Text MT;}
 #outputfield{width:260px; height:60px; font-size:18px; font-family:DigifaceWide; background-color:#FFF; text-align: right}
 .btn_holder{

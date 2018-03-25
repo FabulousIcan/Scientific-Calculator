@@ -1,15 +1,18 @@
-// document.getElementById('dateButton').addEventListener('click', function handleClick() {
-//     document.getElementById('dateTarget').innerHTML = Date();
-// });
+//Display time
+setInterval("setTime()",1000);
 
-setInterval("clock()",1000);
-
-function clock(){
-dat=new Date()
-var clck=document.getElementById("clk").value=dat.getHours()+":"+dat.getMinutes()
+function setTime(){
+  var dateObject = new Date();
+  if(dateObject.getHours() < 10){    
+   document.getElementById("time_display").value = '0' + dateObject.getHours() + " : " + dateObject.getMinutes();
+   }
+  if(dateObject.getMinutes() < 10){    
+   document.getElementById("time_display").value = dateObject.getHours() + " : " + "0" + dateObject.getMinutes();
+   }
+else{
+  document.getElementById("time_display").value =  dateObject.getHours() + " : " + dateObject.getMinutes();
 }
-
-
+}
 
 //calculations
 var outputField = document.getElementById('outputfield');
